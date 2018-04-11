@@ -1,0 +1,61 @@
+[root@room8pc205 桌面]# yum -y install git
+[root@room8pc205 桌面]# mkdir /root/zym/aceyeming
+[root@room8pc205 桌面]# cd /root/zym/aceyeming
+[root@room8pc205 aceyeming]# ls
+[root@room8pc205 aceyeming]# git clone https://github.com/aceyeming/hello-world
+正克隆到 'hello-world'...
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+[root@room8pc205 aceyeming]# ls
+hello-world
+[root@room8pc205 aceyeming]# cd hello-world/
+
+
+[root@room8pc205 hello-world]# vim a.sh
+[root@room8pc205 hello-world]# bash a.sh
+a.sh:行2: =haha: 未找到命令
+
+[root@room8pc205 hello-world]# vim a.sh
+[root@room8pc205 hello-world]# git add a.sh
+[root@room8pc205 hello-world]# git commit -m "xx"
+[master cfb07ab] xx
+ Committer: root <root@room8pc205.tedu.cn>
+您的姓名和邮件地址基于登录名和主机名进行了自动设置。请检查它们正确
+与否。您可以通过下面的命令对其进行明确地设置以免再出现本提示信息：
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+设置完毕后，您可以用下面的命令来修正本次提交所使用的用户身份：
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+)
+ create mode 100755 a.sh
+[root@room8pc205 hello-world]# git push 
+warning: push.default 未设置，它的默认值将会在 Git 2.0 由 'matching'
+修改为 'simple'。若要不再显示本信息并在其默认值改变后维持当前使用习惯，
+进行如下设置：
+
+  git config --global push.default matching
+
+若要不再显示本信息并从现在开始采用新的使用习惯，设置：
+
+  git config --global push.default simple
+
+参见 'git help config' 并查找 'push.default' 以获取更多信息。
+（'simple' 模式由 Git 1.7.11 版本引入。如果您有时要使用老版本的 Git，
+为保持兼容，请用 'current' 代替 'simple' 模式）
+
+Username for 'https://github.com': aceyeming
+Password for 'https://aceyeming@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 293 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/aceyeming/hello-world
+   8acf3f5..cfb07ab  master -> master
+[root@room8pc205 hello-world]# 
