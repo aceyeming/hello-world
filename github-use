@@ -1,0 +1,22 @@
+[root@room8pc205 桌面]# yum -y install git
+[root@room8pc205 桌面]# mkdir /root/zym/aceyeming
+[root@room8pc205 桌面]# cd /root/zym/aceyeming
+[root@room8pc205 aceyeming]# ls
+[root@room8pc205 aceyeming]# git clone https://github.com/aceyeming/hello-world
+正克隆到 'hello-world'...
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+[root@room8pc205 aceyeming]# ls
+hello-world
+[root@room8pc205 aceyeming]# cd hello-world/
+
+
+[root@room8pc205 hello-world]# vim a.sh
+
+[root@room8pc205 hello-world]# git add a.sh
+[root@room8pc205 hello-world]# git commit -m "xx"
+Username for 'https://github.com': aceyeming
+Password for 'https://aceyeming@github.com': 
+[root@room8pc205 hello-world]# 
